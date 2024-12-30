@@ -1,4 +1,4 @@
-# image-to-bbcode
+# image-to-ss14-writing
 A simple python script for converting images to colored BBCode art. Intended for use in the SS14 writing system.
 
 ## Dependencies:
