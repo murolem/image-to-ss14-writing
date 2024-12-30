@@ -1,0 +1,15 @@
+░░░░░░[color=#00273B]██████████████[color=#000000]░░░░░░░░░░
+░░░░[color=#00273B]██[color=#004F71]██[color=#006086]██████████[color=#004F71]██[color=#00273B]██[color=#000000]░░░░░░░░
+░░░░[color=#00273B]██[color=#002030]██[color=#004F71]████[color=#EA0000]██[color=#004F71]████[color=#002030]██[color=#00273B]██[color=#81572A]██[color=#000000]░░░░░░
+░░░░[color=#81572A]██[color=#00273B]██[color=#7A1515]██[color=#B00000]██████[color=#7A1515]██[color=#003F57]██[color=#A1723C]████[color=#81572A]██[color=#000000]░░░░
+[color=#E8CB8C]██[color=#DFBF7B]██████[color=#000D16]██[color=#001826]██[color=#001D2C]██[color=#001826]██[color=#000D16]██[color=#C7A565]██[color=#E8CB8C]██[color=#DFBF7B]██████[color=#E8CB8C]██
+[color=#81572A]██[color=#F7D896]██[color=#E8CB8C]████[color=#DFBF7B]████[color=#A1723C]██████[color=#DFBF7B]████[color=#E8CB8C]████[color=#F7D896]██[color=#81572A]██
+████[color=#A1723C]██[color=#C7A565]██[color=#F7D896]██[color=#A1723C]██[color=#E5CD99]██████[color=#A1723C]██[color=#F7D896]██[color=#C7A565]██[color=#A1723C]██[color=#81572A]████
+██[color=#A1723C]██[color=#DFBF7B]██[color=#F7D896]██[color=#A1723C]██[color=#222021]██[color=#DBC18A]██[color=#E5CD99]██[color=#DBC18A]██[color=#222021]██[color=#A1723C]██[color=#F7D896]██[color=#DFBF7B]██[color=#A1723C]██[color=#81572A]██
+██[color=#A1723C]██[color=#DFBF7B]████[color=#222021]██[color=#2C2827]██[color=#222021]██[color=#DBC18A]██[color=#222021]██[color=#2C2827]██[color=#222021]██[color=#DFBF7B]████[color=#A1723C]██[color=#81572A]██
+[color=#000000]░░[color=#81572A]██[color=#C7A565]██[color=#DFBF7B]██[color=#A1723C]██[color=#222021]██[color=#DBC18A]██████[color=#222021]██[color=#A1723C]██[color=#DFBF7B]██[color=#C7A565]██[color=#81572A]██[color=#000000]░░
+░░░░[color=#C7A565]██[color=#E8CB8C]██[color=#DFBF7B]██[color=#A1723C]██[color=#D4AF6B]██████[color=#A1723C]██[color=#DFBF7B]██[color=#E8CB8C]██[color=#C7A565]██[color=#000000]░░░░
+░░░░░░[color=#C7A565]██[color=#DFBF7B]██[color=#F7D896]██[color=#A1723C]██████[color=#F7D896]██[color=#DFBF7B]██[color=#C7A565]██[color=#000000]░░░░░░
+░░░░░░[color=#A1723C]██[color=#E8CB8C]██[color=#F7D896]██[color=#DFBF7B]██████[color=#F7D896]██[color=#E8CB8C]██[color=#A1723C]██[color=#000000]░░░░░░
+░░░░░░[color=#2E2A26]██[color=#22201C]██[color=#C7A565]██████████[color=#22201C]██[color=#2E2A26]██[color=#000000]░░░░░░
+[/color]
