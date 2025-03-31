@@ -242,4 +242,5 @@ canvas {
 .button {
     color: var(--text-color-alt);
     background-color: var(--action-color-750);
+    border-color: var(--border-color-750);
 }

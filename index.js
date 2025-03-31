@@ -178,8 +178,8 @@ function tryWithImage(img, params = {}) {
             : "Want to continue? It's gonna take a bit of time to process.";
 
         const icon = pixelsCount >= pixelsCountErrorThreshold
-            ? "/assets/shark-pink.png"
-            : "/assets/shark-blue.png"
+            ? "./assets/shark-pink.png"
+            : "./assets/shark-blue.png"
 
         const level = pixelsCount >= pixelsCountErrorThreshold
             ? "error"
@@ -195,7 +195,7 @@ function tryWithImage(img, params = {}) {
             clearAlert();
         });
 
-        setAlertDANGEROUSLY("warn", `<b class="text-warn">Warning:</b> the image is <b>wider</b> than the limit of <b>${maxWidthPixels}px</b>. That means the image <b>will not fit</b> in the game's writing. Continue at your own risk <img class="alert-img" src="/assets/weh.png"><br><br>`);
+        setAlertDANGEROUSLY("warn", `<b class="text-warn">Warning:</b> the image is <b>wider</b> than the limit of <b>${maxWidthPixels}px</b>. That means the image <b>will not fit</b> in the game's writing. Continue at your own risk <img class="alert-img" src="./assets/weh.png"><br><br>`);
         alertsBoxEl.append(continueButton);
 
         return;
