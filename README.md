@@ -1,15 +1,7 @@
 # image-to-ss14-writing
-A simple python script for converting images to colored BBCode art. Intended for use in the SS14 writing system.
 
-## Dependencies:
-- Python >= 3.10
-- Pillow `py -m pip install pillow`
+An image to SS14 writing (colored BBCode art) converter as a web app hosted on github.
 
-## Usage:
-Simply run the following shell command with a filepath to any image file Pillow accepts.
+The image converting code is [written](https://github.com/Compilatron144/image-to-ss14-writing) by **Compilatron144** in Python. Adapted to JS with fancy schmancy stuffs around it by me.
 
-`py converter.py <filepath>`
-
-The text will output to the same directory, under the same filename, appended with .txt
-
-Do not try and use large images, this generator is intended for pixel art - at most 32 wide
+**[Visit the app](https://image-to-ss14-writing.github.io)**

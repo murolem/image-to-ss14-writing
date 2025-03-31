@@ -1,0 +1,1 @@
+type BbPixels = Array<{ shadeBlockI: string, colHex: string }>;

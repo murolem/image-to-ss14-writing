@@ -1,0 +1,245 @@
+:root {
+    --bg-color-150: hsl(232, 10%, 15%);
+    --bg-color-200: hsl(232, 10%, 20%);
+    --bg-color-250: hsl(232, 10%, 25%);
+
+    --border-color-750: hsl(232, 25%, 75%);
+
+    --text-color: hsl(250, 95%, 95%);
+    --text-color-alt: hsl(250, 95%, 5%);
+
+    --action-color-750: hsl(232, 95%, 75%);
+    --action-color-border-900: hsl(232, 85%, 90%);
+    --action-color-border-950: hsl(232, 85%, 95%);
+
+    --success-color-750: hsl(130, 95%, 75%);
+
+    --warning-color-750: hsl(54, 95%, 75%);
+
+    --danger-color-750: hsl(0, 95%, 75%);
+
+    /* ===== */
+
+    --bg-color: var(--bg-color-150);
+
+    /* color-scheme: dark; */
+
+    --canvas-width: 400px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    background-color: var(--bg-color-200);
+    border: 1px solid var(--border-color-750);
+}
+
+#canvas-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0 1rem;
+    /* flex-direction: row; */
+}
+
+
+.canvas-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hidden-buffer-canvas {
+    display: none;
+}
+
+#bb-code {
+    background-color: var(--bg-color-200);
+    border: 2px solid var(--border-color-750);
+
+    width: var(--canvas-width);
+    height: 100%;
+    min-height: 20em;
+
+    color: var(--text-color);
+}
+
+#image-drop-container {
+    position: relative;
+    margin-top: 8vh;
+}
+
+#image-drop-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-wrap: nowrap;
+    margin: 0;
+
+    font-size: 3em;
+    font-family: sans-serif;
+
+    pointer-events: none;
+}
+
+#image-drop-label2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+
+    font-size: 1em;
+    font-family: sans-serif;
+    pointer-events: none;
+}
+
+#image-drop {
+    --border-radius-ver: 3rem;
+    --border-radius-hor: 2.5rem;
+
+    position: relative;
+    /* display: flex; */
+    /* justify-content: center; */
+
+    width: 35rem;
+    height: 20rem;
+    border: 3px solid var(--action-color-border-900);
+    border-radius: var(--border-radius-ver) / var( --border-radius-hor);
+
+    transition: padding 300ms ease-out,
+        border-color 150ms ease-in;
+    cursor: pointer;
+
+    &:hover {
+        padding: 0 .25rem;
+        border-color: var(--action-color-border-950);
+    }
+}
+
+#image-drop.drag-above {
+    border-color: var(--action-color-750);
+
+    padding: 0 .25rem;
+    border-color: var(--action-color-border-950);
+
+    transition: padding 150mx ease-out
+        border-color 50ms ease-out;
+}
+
+#image-drop-hor-filler {
+    position: absolute;
+    top: var(--border-radius-ver);
+    left: -5px;
+    height: calc(100% - var(--border-radius-ver) * 2);
+    width: calc(100% + 10px);
+    background-color: var(--bg-color);
+    pointer-events: none;
+}
+
+#image-drop-ver-filler {
+    position: absolute;
+    left: var(--border-radius-hor);
+    top: -5px;
+    height: calc(100% + 10px);
+    width: calc(100% - var(--border-radius-hor) * 2);
+    background-color: var(--bg-color);
+    pointer-events: none;
+}
+
+#bbcode-label-and-button-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+#copy-bbcode {
+    width: 40%;
+    height: 90%;
+
+    font-size: 1.1em;
+    font-weight: bold;
+
+    transition: all 100ms ease-in;
+}
+
+#copy-bbcode:disabled {
+    color: var(--text-color-alt);
+}
+
+#copy-bbcode.clicked {
+    background-color: var(--success-color-750);
+
+    transition: all 50ms ease-out;
+}
+
+/* wavified el */
+.wavyfied > *:not(.s) {
+    display: inline-block;
+}
+
+#image-input-hidden {
+    display: none;
+}
+
+#alerts-box {
+    --margin-left: 3rem;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 30ch;
+    border: 2px solid transparent;
+    border-radius: .3rem;
+    line-height: 1.4em;
+
+    transform: translateX(calc(100% + var(--margin-left)));
+    padding: .5rem;
+}
+
+#alerts-box.warn {
+    border-color: var(--warning-color-750);
+}
+
+#alerts-box.error {
+    border-color: var(--danger-color-750);
+}
+
+.alert-img {
+    vertical-align: middle;
+}
+
+.text-warn {
+    color: var(--warning-color-750);
+}
+
+/* warn text */
+.text-error {
+    color: var(--danger-color-750);
+}
+
+
+.button {
+    color: var(--text-color-alt);
+    background-color: var(--action-color-750);
+}

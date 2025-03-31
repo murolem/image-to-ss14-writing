@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image to SS14 Writing Converter</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div id="image-drop-container">
+            <div id="image-drop">
+                <div id="image-drop-hor-filler"></div>
+                <div id="image-drop-ver-filler"></div>
+            </div>
+            <h2 id="image-drop-label">Select pixel image</h2>
+            <h2 id="image-drop-label2"><i>click or drop here</i></h2>
+            <input id="image-input-hidden" type="file" accept="image/*" />
+            <div id="alerts-box"></div>
+        </div>
+        <!-- <input type="file" accept="image/*" id="image" disabled /> -->
+        <div id="canvas-container">
+            <div class="canvas-wrapper">
+                <h3>Source image</h3>
+                <canvas id="source-image" width="400" height="400"></canvas>
+            </div>
+
+            <div class="canvas-wrapper">
+                <h3>Converted image</h3>
+                <canvas id="bb-image" width="400" height="400"></canvas>
+            </div>
+
+            <div class="canvas-wrapper">
+                <div id="bbcode-label-and-button-wrapper">
+                    <h3 id="bb-code-label">BB Code</h3>
+                    <button id="copy-bbcode" class="button">Copy</button>
+                </div>
+                <textarea id="bb-code"></textarea>
+            </div>
+
+            <canvas id="hidden-buffer-canvas" width="400" height="400"></canvas>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
